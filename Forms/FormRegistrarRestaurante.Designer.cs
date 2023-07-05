@@ -24,11 +24,11 @@
             checkBox__reg_rest_activo = new CheckBox();
             textBox_reg_rest_nombre = new TextBox();
             label_reg_rest_nombre = new Label();
-            label_reg_rest_direccion = new Label();
-            textBox_reg_rest_direccion = new TextBox();
-            label_reg_rest_telefono = new Label();
-            textBox_reg_rest_telefono = new TextBox();
             button_reg_restaurante = new Button();
+            label2 = new Label();
+            textBox_reg_rest_direccion = new TextBox();
+            label3 = new Label();
+            textBox_reg_rest_telefono = new TextBox();
             SuspendLayout();
             // 
             // label1
@@ -43,11 +43,11 @@
             // checkBox__reg_rest_activo
             // 
             checkBox__reg_rest_activo.AutoSize = true;
-            checkBox__reg_rest_activo.Location = new Point(24, 294);
+            checkBox__reg_rest_activo.Location = new Point(24, 392);
             checkBox__reg_rest_activo.Name = "checkBox__reg_rest_activo";
-            checkBox__reg_rest_activo.Size = new Size(249, 29);
+            checkBox__reg_rest_activo.Size = new Size(241, 29);
             checkBox__reg_rest_activo.TabIndex = 1;
-            checkBox__reg_rest_activo.Text = "¿Está el restaurante activo?";
+            checkBox__reg_rest_activo.Text = "¿Es un restaurante activo?";
             checkBox__reg_rest_activo.UseVisualStyleBackColor = true;
             // 
             // textBox_reg_rest_nombre
@@ -66,60 +66,61 @@
             label_reg_rest_nombre.TabIndex = 3;
             label_reg_rest_nombre.Text = "Nombre";
             // 
-            // label_reg_rest_direccion
-            // 
-            label_reg_rest_direccion.AutoSize = true;
-            label_reg_rest_direccion.Location = new Point(24, 187);
-            label_reg_rest_direccion.Name = "label_reg_rest_direccion";
-            label_reg_rest_direccion.Size = new Size(85, 25);
-            label_reg_rest_direccion.TabIndex = 5;
-            label_reg_rest_direccion.Text = "Dirección";
-            // 
-            // textBox_reg_rest_direccion
-            // 
-            textBox_reg_rest_direccion.Location = new Point(24, 215);
-            textBox_reg_rest_direccion.Name = "textBox_reg_rest_direccion";
-            textBox_reg_rest_direccion.Size = new Size(352, 31);
-            textBox_reg_rest_direccion.TabIndex = 4;
-            // 
-            // label_reg_rest_telefono
-            // 
-            label_reg_rest_telefono.AutoSize = true;
-            label_reg_rest_telefono.Location = new Point(24, 361);
-            label_reg_rest_telefono.Name = "label_reg_rest_telefono";
-            label_reg_rest_telefono.Size = new Size(79, 25);
-            label_reg_rest_telefono.TabIndex = 7;
-            label_reg_rest_telefono.Text = "Teléfono";
-            // 
-            // textBox_reg_rest_telefono
-            // 
-            textBox_reg_rest_telefono.Location = new Point(24, 389);
-            textBox_reg_rest_telefono.Name = "textBox_reg_rest_telefono";
-            textBox_reg_rest_telefono.Size = new Size(352, 31);
-            textBox_reg_rest_telefono.TabIndex = 6;
-            // 
             // button_reg_restaurante
             // 
-            button_reg_restaurante.Location = new Point(24, 464);
+            button_reg_restaurante.Location = new Point(24, 466);
             button_reg_restaurante.Name = "button_reg_restaurante";
             button_reg_restaurante.Size = new Size(352, 58);
             button_reg_restaurante.TabIndex = 8;
-            button_reg_restaurante.Text = "Registrar nuevo restaurante";
+            button_reg_restaurante.Text = "Registrar restaurante";
             button_reg_restaurante.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(24, 177);
+            label2.Name = "label2";
+            label2.Size = new Size(85, 25);
+            label2.TabIndex = 10;
+            label2.Text = "Dirección";
+            // 
+            // textBox_reg_rest_direccion
+            // 
+            textBox_reg_rest_direccion.Location = new Point(24, 205);
+            textBox_reg_rest_direccion.Name = "textBox_reg_rest_direccion";
+            textBox_reg_rest_direccion.Size = new Size(352, 31);
+            textBox_reg_rest_direccion.TabIndex = 9;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(24, 286);
+            label3.Name = "label3";
+            label3.Size = new Size(79, 25);
+            label3.TabIndex = 12;
+            label3.Text = "Teléfono";
+            // 
+            // textBox_reg_rest_telefono
+            // 
+            textBox_reg_rest_telefono.Location = new Point(24, 314);
+            textBox_reg_rest_telefono.Name = "textBox_reg_rest_telefono";
+            textBox_reg_rest_telefono.Size = new Size(352, 31);
+            textBox_reg_rest_telefono.TabIndex = 11;
             // 
             // FormRegistrarRestaurante
             // 
-            ClientSize = new Size(1204, 942);
-            Controls.Add(button_reg_restaurante);
-            Controls.Add(label_reg_rest_telefono);
+            ClientSize = new Size(405, 635);
+            Controls.Add(label3);
             Controls.Add(textBox_reg_rest_telefono);
-            Controls.Add(label_reg_rest_direccion);
+            Controls.Add(label2);
             Controls.Add(textBox_reg_rest_direccion);
+            Controls.Add(button_reg_restaurante);
             Controls.Add(label_reg_rest_nombre);
             Controls.Add(textBox_reg_rest_nombre);
             Controls.Add(checkBox__reg_rest_activo);
             Controls.Add(label1);
             Name = "FormRegistrarRestaurante";
+            Text = "Registrar Restaurante";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -131,10 +132,10 @@
         private CheckBox checkBox__reg_rest_activo;
         private TextBox textBox_reg_rest_nombre;
         private Label label_reg_rest_nombre;
-        private Label label_reg_rest_direccion;
-        private TextBox textBox_reg_rest_direccion;
-        private Label label_reg_rest_telefono;
-        private TextBox textBox_reg_rest_telefono;
         private Button button_reg_restaurante;
+        private Label label2;
+        private TextBox textBox_reg_rest_direccion;
+        private Label label3;
+        private TextBox textBox_reg_rest_telefono;
     }
 }

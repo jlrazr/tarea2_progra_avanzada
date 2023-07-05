@@ -1,3 +1,5 @@
+using Tarea2.Forms;
+
 namespace Tarea2
 {
     public partial class FormPrincipal : Form
@@ -16,6 +18,24 @@ namespace Tarea2
         private void button_menu_reg_restaurante_Click(object sender, EventArgs e)
         {
             var form = new FormRegistrarRestaurante(managerRest);
+            form.ShowDialog();
+        }
+
+        private void button_reg_catPlatos_Click(object sender, EventArgs e)
+        {
+            var form = new FormRegistrarCategPlato(managerCategPlatos);
+            form.ShowDialog();
+        }
+
+        private void button_reg_plato_Click(object sender, EventArgs e)
+        {
+            var form = new FormRegistrarPlato(managerPlatos, managerCategPlatos);
+            form.ShowDialog();
+        }
+
+        private void button_reg_cliente_Click(object sender, EventArgs e)
+        {
+            var form = new FormRegistrarCliente(managerClientes);
             form.ShowDialog();
         }
     }

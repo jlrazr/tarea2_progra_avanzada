@@ -1,5 +1,3 @@
-using System.Xml.Linq;
-
 namespace Tarea2
 {
     public partial class FormRegistrarRestaurante : Form
