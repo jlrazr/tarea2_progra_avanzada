@@ -104,6 +104,7 @@
             button_reg_extras.TabIndex = 9;
             button_reg_extras.Text = "Registrar Extras";
             button_reg_extras.UseVisualStyleBackColor = true;
+            button_reg_extras.Click += button_reg_extras_Click;
             // 
             // checkBox_reg_extra_activa
             // 

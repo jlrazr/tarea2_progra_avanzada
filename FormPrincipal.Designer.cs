@@ -119,6 +119,7 @@
             button_reg_extras.TabIndex = 6;
             button_reg_extras.Text = "Registrar Extras";
             button_reg_extras.UseVisualStyleBackColor = true;
+            button_reg_extras.Click += button_reg_extras_Click;
             // 
             // button_reg_platoRest
             // 

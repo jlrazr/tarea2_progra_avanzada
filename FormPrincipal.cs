@@ -41,7 +41,13 @@ namespace Tarea2
 
         private void button_reg_platoRest_Click(object sender, EventArgs e)
         {
-            var form = new FormRegistrarPlatoRestaurante(managerRestPlatos);
+            //var form = new FormRegistrarPlatoRestaurante(managerRestPlatos);
+            //form.ShowDialog();
+        }
+
+        private void button_reg_extras_Click(object sender, EventArgs e)
+        {
+            var form = new FormRegistrarExtra(managerExtra, managerCategPlatos);
             form.ShowDialog();
         }
     }
