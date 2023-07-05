@@ -54,7 +54,7 @@
             // 
             textBox_reg_rest_nombre.Location = new Point(24, 110);
             textBox_reg_rest_nombre.Name = "textBox_reg_rest_nombre";
-            textBox_reg_rest_nombre.Size = new Size(352, 31);
+            textBox_reg_rest_nombre.Size = new Size(482, 31);
             textBox_reg_rest_nombre.TabIndex = 2;
             // 
             // label_reg_rest_nombre
@@ -70,7 +70,7 @@
             // 
             button_reg_restaurante.Location = new Point(24, 466);
             button_reg_restaurante.Name = "button_reg_restaurante";
-            button_reg_restaurante.Size = new Size(352, 58);
+            button_reg_restaurante.Size = new Size(482, 58);
             button_reg_restaurante.TabIndex = 8;
             button_reg_restaurante.Text = "Registrar restaurante";
             button_reg_restaurante.UseVisualStyleBackColor = true;
@@ -88,7 +88,7 @@
             // 
             textBox_reg_rest_direccion.Location = new Point(24, 205);
             textBox_reg_rest_direccion.Name = "textBox_reg_rest_direccion";
-            textBox_reg_rest_direccion.Size = new Size(352, 31);
+            textBox_reg_rest_direccion.Size = new Size(482, 31);
             textBox_reg_rest_direccion.TabIndex = 9;
             // 
             // label3
@@ -104,12 +104,12 @@
             // 
             textBox_reg_rest_telefono.Location = new Point(24, 314);
             textBox_reg_rest_telefono.Name = "textBox_reg_rest_telefono";
-            textBox_reg_rest_telefono.Size = new Size(352, 31);
+            textBox_reg_rest_telefono.Size = new Size(482, 31);
             textBox_reg_rest_telefono.TabIndex = 11;
             // 
             // FormRegistrarRestaurante
             // 
-            ClientSize = new Size(405, 635);
+            ClientSize = new Size(518, 904);
             Controls.Add(label3);
             Controls.Add(textBox_reg_rest_telefono);
             Controls.Add(label2);

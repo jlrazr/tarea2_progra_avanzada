@@ -95,7 +95,7 @@
             // 
             // button_consul_categ
             // 
-            button_consul_categ.Location = new Point(20, 556);
+            button_consul_categ.Location = new Point(20, 616);
             button_consul_categ.Name = "button_consul_categ";
             button_consul_categ.Size = new Size(475, 50);
             button_consul_categ.TabIndex = 8;
@@ -104,7 +104,7 @@
             // 
             // button_consul_rest
             // 
-            button_consul_rest.Location = new Point(20, 488);
+            button_consul_rest.Location = new Point(20, 548);
             button_consul_rest.Name = "button_consul_rest";
             button_consul_rest.Size = new Size(475, 50);
             button_consul_rest.TabIndex = 7;
@@ -128,10 +128,11 @@
             button_reg_platoRest.TabIndex = 5;
             button_reg_platoRest.Text = "Registrar Platos por Restaurante";
             button_reg_platoRest.UseVisualStyleBackColor = true;
+            button_reg_platoRest.Click += button_reg_platoRest_Click;
             // 
             // button_consul_extras
             // 
-            button_consul_extras.Location = new Point(20, 836);
+            button_consul_extras.Location = new Point(20, 896);
             button_consul_extras.Name = "button_consul_extras";
             button_consul_extras.Size = new Size(475, 50);
             button_consul_extras.TabIndex = 12;
@@ -140,7 +141,7 @@
             // 
             // button_consul_platoRest
             // 
-            button_consul_platoRest.Location = new Point(20, 768);
+            button_consul_platoRest.Location = new Point(20, 828);
             button_consul_platoRest.Name = "button_consul_platoRest";
             button_consul_platoRest.Size = new Size(475, 50);
             button_consul_platoRest.TabIndex = 11;
@@ -149,7 +150,7 @@
             // 
             // button_consul_clientes
             // 
-            button_consul_clientes.Location = new Point(20, 697);
+            button_consul_clientes.Location = new Point(20, 757);
             button_consul_clientes.Name = "button_consul_clientes";
             button_consul_clientes.Size = new Size(475, 50);
             button_consul_clientes.TabIndex = 10;
@@ -158,7 +159,7 @@
             // 
             // button_consul_platos
             // 
-            button_consul_platos.Location = new Point(20, 629);
+            button_consul_platos.Location = new Point(20, 689);
             button_consul_platos.Name = "button_consul_platos";
             button_consul_platos.Size = new Size(475, 50);
             button_consul_platos.TabIndex = 9;
@@ -169,7 +170,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(507, 905);
+            ClientSize = new Size(507, 981);
             Controls.Add(button_consul_extras);
             Controls.Add(button_consul_platoRest);
             Controls.Add(button_consul_clientes);

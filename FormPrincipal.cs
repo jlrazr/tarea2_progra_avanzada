@@ -38,5 +38,11 @@ namespace Tarea2
             var form = new FormRegistrarCliente(managerClientes);
             form.ShowDialog();
         }
+
+        private void button_reg_platoRest_Click(object sender, EventArgs e)
+        {
+            var form = new FormRegistrarPlatoRestaurante(managerRestPlatos);
+            form.ShowDialog();
+        }
     }
 }

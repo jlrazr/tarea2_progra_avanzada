@@ -18,7 +18,7 @@
             int idCateg = int.Parse(textBox_reg_plato_idCateg.Text);
 
             CategoriaPlato categ = managerCategPlatos.GetPorId(idCateg);
-            
+
 
             Plato nuevoPlato = new(nombre, precio, categ);
 

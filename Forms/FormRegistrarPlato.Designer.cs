@@ -60,14 +60,14 @@
             // 
             textBox_reg_plato_nombre.Location = new Point(16, 99);
             textBox_reg_plato_nombre.Name = "textBox_reg_plato_nombre";
-            textBox_reg_plato_nombre.Size = new Size(439, 31);
+            textBox_reg_plato_nombre.Size = new Size(490, 31);
             textBox_reg_plato_nombre.TabIndex = 2;
             // 
             // textBox_reg_plato_precio
             // 
             textBox_reg_plato_precio.Location = new Point(16, 206);
             textBox_reg_plato_precio.Name = "textBox_reg_plato_precio";
-            textBox_reg_plato_precio.Size = new Size(439, 31);
+            textBox_reg_plato_precio.Size = new Size(490, 31);
             textBox_reg_plato_precio.TabIndex = 4;
             // 
             // label3
@@ -83,7 +83,7 @@
             // 
             textBox_reg_plato_idCateg.Location = new Point(16, 320);
             textBox_reg_plato_idCateg.Name = "textBox_reg_plato_idCateg";
-            textBox_reg_plato_idCateg.Size = new Size(439, 31);
+            textBox_reg_plato_idCateg.Size = new Size(490, 31);
             textBox_reg_plato_idCateg.TabIndex = 6;
             // 
             // label4
@@ -99,7 +99,7 @@
             // 
             button_reg_plato.Location = new Point(16, 424);
             button_reg_plato.Name = "button_reg_plato";
-            button_reg_plato.Size = new Size(439, 57);
+            button_reg_plato.Size = new Size(490, 57);
             button_reg_plato.TabIndex = 7;
             button_reg_plato.Text = "Registrar Plato";
             button_reg_plato.UseVisualStyleBackColor = true;
@@ -109,7 +109,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(467, 824);
+            ClientSize = new Size(518, 904);
             Controls.Add(button_reg_plato);
             Controls.Add(textBox_reg_plato_idCateg);
             Controls.Add(label4);

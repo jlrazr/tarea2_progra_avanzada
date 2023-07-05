@@ -41,6 +41,8 @@
             label6 = new Label();
             radioButton_reg_cliente_f = new RadioButton();
             button_reg_cliente = new Button();
+            panel_reg_cliente_radio_contenedor = new Panel();
+            panel_reg_cliente_radio_contenedor.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -65,14 +67,14 @@
             // 
             textBox_reg_cliente_nombre.Location = new Point(13, 112);
             textBox_reg_cliente_nombre.Name = "textBox_reg_cliente_nombre";
-            textBox_reg_cliente_nombre.Size = new Size(401, 31);
+            textBox_reg_cliente_nombre.Size = new Size(493, 31);
             textBox_reg_cliente_nombre.TabIndex = 2;
             // 
             // textBox_reg_cliente_apellido1
             // 
             textBox_reg_cliente_apellido1.Location = new Point(13, 214);
             textBox_reg_cliente_apellido1.Name = "textBox_reg_cliente_apellido1";
-            textBox_reg_cliente_apellido1.Size = new Size(401, 31);
+            textBox_reg_cliente_apellido1.Size = new Size(493, 31);
             textBox_reg_cliente_apellido1.TabIndex = 4;
             // 
             // label3
@@ -88,7 +90,7 @@
             // 
             textBox_reg_cliente_apellido2.Location = new Point(13, 325);
             textBox_reg_cliente_apellido2.Name = "textBox_reg_cliente_apellido2";
-            textBox_reg_cliente_apellido2.Size = new Size(401, 31);
+            textBox_reg_cliente_apellido2.Size = new Size(493, 31);
             textBox_reg_cliente_apellido2.TabIndex = 6;
             // 
             // label4
@@ -113,13 +115,13 @@
             // 
             dateTimePicker_reg_cliente_dob.Location = new Point(13, 440);
             dateTimePicker_reg_cliente_dob.Name = "dateTimePicker_reg_cliente_dob";
-            dateTimePicker_reg_cliente_dob.Size = new Size(401, 31);
+            dateTimePicker_reg_cliente_dob.Size = new Size(493, 31);
             dateTimePicker_reg_cliente_dob.TabIndex = 8;
             // 
             // radioButton_reg_cliente_m
             // 
             radioButton_reg_cliente_m.AutoSize = true;
-            radioButton_reg_cliente_m.Location = new Point(13, 553);
+            radioButton_reg_cliente_m.Location = new Point(12, 14);
             radioButton_reg_cliente_m.Name = "radioButton_reg_cliente_m";
             radioButton_reg_cliente_m.Size = new Size(117, 29);
             radioButton_reg_cliente_m.TabIndex = 9;
@@ -139,7 +141,7 @@
             // radioButton_reg_cliente_f
             // 
             radioButton_reg_cliente_f.AutoSize = true;
-            radioButton_reg_cliente_f.Location = new Point(13, 599);
+            radioButton_reg_cliente_f.Location = new Point(12, 66);
             radioButton_reg_cliente_f.Name = "radioButton_reg_cliente_f";
             radioButton_reg_cliente_f.Size = new Size(115, 29);
             radioButton_reg_cliente_f.TabIndex = 11;
@@ -151,20 +153,29 @@
             // 
             button_reg_cliente.Location = new Point(12, 677);
             button_reg_cliente.Name = "button_reg_cliente";
-            button_reg_cliente.Size = new Size(402, 58);
+            button_reg_cliente.Size = new Size(494, 58);
             button_reg_cliente.TabIndex = 12;
             button_reg_cliente.Text = "Registrar Cliente";
             button_reg_cliente.UseVisualStyleBackColor = true;
+            button_reg_cliente.Click += button_reg_cliente_Click;
+            // 
+            // panel_reg_cliente_radio_contenedor
+            // 
+            panel_reg_cliente_radio_contenedor.Controls.Add(radioButton_reg_cliente_m);
+            panel_reg_cliente_radio_contenedor.Controls.Add(radioButton_reg_cliente_f);
+            panel_reg_cliente_radio_contenedor.Location = new Point(13, 537);
+            panel_reg_cliente_radio_contenedor.Name = "panel_reg_cliente_radio_contenedor";
+            panel_reg_cliente_radio_contenedor.Size = new Size(401, 110);
+            panel_reg_cliente_radio_contenedor.TabIndex = 13;
             // 
             // FormRegistrarCliente
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(438, 862);
+            ClientSize = new Size(518, 904);
+            Controls.Add(panel_reg_cliente_radio_contenedor);
             Controls.Add(button_reg_cliente);
-            Controls.Add(radioButton_reg_cliente_f);
             Controls.Add(label6);
-            Controls.Add(radioButton_reg_cliente_m);
             Controls.Add(dateTimePicker_reg_cliente_dob);
             Controls.Add(label5);
             Controls.Add(textBox_reg_cliente_apellido2);
@@ -176,6 +187,8 @@
             Controls.Add(label1);
             Name = "FormRegistrarCliente";
             Text = "Registrar Cliente";
+            panel_reg_cliente_radio_contenedor.ResumeLayout(false);
+            panel_reg_cliente_radio_contenedor.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -195,5 +208,6 @@
         private Label label6;
         private RadioButton radioButton_reg_cliente_f;
         private Button button_reg_cliente;
+        private Panel panel_reg_cliente_radio_contenedor;
     }
 }

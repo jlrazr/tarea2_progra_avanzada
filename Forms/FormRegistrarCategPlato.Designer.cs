@@ -57,7 +57,7 @@
             // 
             textBox_reg_cat_descripcion.Location = new Point(15, 124);
             textBox_reg_cat_descripcion.Name = "textBox_reg_cat_descripcion";
-            textBox_reg_cat_descripcion.Size = new Size(425, 31);
+            textBox_reg_cat_descripcion.Size = new Size(491, 31);
             textBox_reg_cat_descripcion.TabIndex = 2;
             // 
             // checkBox_reg_cat_activa
@@ -74,7 +74,7 @@
             // 
             button_reg_cat_plato.Location = new Point(15, 282);
             button_reg_cat_plato.Name = "button_reg_cat_plato";
-            button_reg_cat_plato.Size = new Size(425, 56);
+            button_reg_cat_plato.Size = new Size(491, 56);
             button_reg_cat_plato.TabIndex = 4;
             button_reg_cat_plato.Text = "Registrar Categoría de Plato";
             button_reg_cat_plato.UseVisualStyleBackColor = true;
@@ -84,7 +84,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(467, 467);
+            ClientSize = new Size(518, 904);
             Controls.Add(button_reg_cat_plato);
             Controls.Add(checkBox_reg_cat_activa);
             Controls.Add(textBox_reg_cat_descripcion);
