@@ -110,6 +110,7 @@
             button_consul_rest.TabIndex = 7;
             button_consul_rest.Text = "Consultar Restaurantes";
             button_consul_rest.UseVisualStyleBackColor = true;
+            button_consul_rest.Click += button_consul_rest_Click;
             // 
             // button_reg_extras
             // 

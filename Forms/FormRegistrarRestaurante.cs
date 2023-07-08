@@ -1,3 +1,5 @@
+using Tarea2.Forms;
+
 namespace Tarea2
 {
     public partial class FormRegistrarRestaurante : Form
@@ -20,6 +22,9 @@ namespace Tarea2
 
             // Registra el restaurante
             managerRest.Registrar(nuevoRest);
+
+            var mensaje = new FormMensaje("El restaurante " + nombre + " ha sido añadido");
+            mensaje.ShowDialog();
         }
     }
 }

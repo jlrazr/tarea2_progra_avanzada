@@ -50,5 +50,11 @@ namespace Tarea2
             var form = new FormRegistrarExtra(managerExtra, managerCategPlatos);
             form.ShowDialog();
         }
+
+        private void button_consul_rest_Click(object sender, EventArgs e)
+        {
+            var form = new FormMostrarRestaurantes(managerRest);
+            form.ShowDialog();
+        }
     }
 }

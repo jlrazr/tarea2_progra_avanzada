@@ -74,6 +74,7 @@
             button_reg_restaurante.TabIndex = 8;
             button_reg_restaurante.Text = "Registrar restaurante";
             button_reg_restaurante.UseVisualStyleBackColor = true;
+            button_reg_restaurante.Click += button_reg_restaurante_Click;
             // 
             // label2
             // 

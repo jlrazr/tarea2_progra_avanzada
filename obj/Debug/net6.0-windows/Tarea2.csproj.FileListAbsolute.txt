@@ -21,3 +21,5 @@ D:\UNED\IIQ2023\Programacion Avanzada\Tarea2\Tarea2\Tarea2\obj\Debug\net6.0-wind
 D:\UNED\IIQ2023\Programacion Avanzada\Tarea2\Tarea2\Tarea2\obj\Debug\net6.0-windows\Tarea2.Forms.FormRegistrarExtra.resources
 D:\UNED\IIQ2023\Programacion Avanzada\Tarea2\Tarea2\Tarea2\obj\Debug\net6.0-windows\Tarea2.Forms.FormRegistrarPlato.resources
 D:\UNED\IIQ2023\Programacion Avanzada\Tarea2\Tarea2\Tarea2\obj\Debug\net6.0-windows\Tarea2.Forms.FormRegistrarPlatoRestaurante.resources
+D:\UNED\IIQ2023\Programacion Avanzada\Tarea2\Tarea2\Tarea2\obj\Debug\net6.0-windows\Tarea2.Forms.FormMostrarRestaurantes.resources
+D:\UNED\IIQ2023\Programacion Avanzada\Tarea2\Tarea2\Tarea2\obj\Debug\net6.0-windows\Tarea2.Forms.FormMensaje.resources
