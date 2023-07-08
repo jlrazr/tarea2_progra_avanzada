@@ -158,6 +158,7 @@
             button_consul_clientes.TabIndex = 10;
             button_consul_clientes.Text = "Consultar Clientes";
             button_consul_clientes.UseVisualStyleBackColor = true;
+            button_consul_clientes.Click += button_consul_clientes_Click;
             // 
             // button_consul_platos
             // 

@@ -56,5 +56,11 @@ namespace Tarea2
             var form = new FormMostrarRestaurantes(managerRest);
             form.ShowDialog();
         }
+
+        private void button_consul_clientes_Click(object sender, EventArgs e)
+        {
+            var form = new FormMostrarClientes(managerClientes);
+            form.ShowDialog();
+        }
     }
 }
