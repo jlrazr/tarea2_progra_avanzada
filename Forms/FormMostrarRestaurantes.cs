@@ -16,11 +16,6 @@ namespace Tarea2.Forms
 
         }
 
-        private void FormMostrarRestaurantes_Load(object sender, EventArgs e)
-        {
-            dataGridView_consul_restaruantes.DataSource = managerRest.GetTodos().Where(x => x != null).ToList();
-        }
-
         private void FormMostrarRestaurantes_Shown(object sender, EventArgs e)
         {
             dataGridView_consul_restaruantes.DataSource = managerRest.GetTodos().Where(x => x != null).ToList();

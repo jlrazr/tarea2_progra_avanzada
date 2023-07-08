@@ -1,6 +1,6 @@
 ﻿namespace Tarea2.Forms
 {
-    partial class FormMostrarRestaurantes
+    partial class FormMostrarClientes
     {
         /// <summary>
         /// Required designer variable.
@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            dataGridView_consul_restaruantes = new DataGridView();
-            ((System.ComponentModel.ISupportInitialize)dataGridView_consul_restaruantes).BeginInit();
+            dataGridView_consul_clientes = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridView_consul_clientes).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -38,30 +38,30 @@
             label1.AutoSize = true;
             label1.Location = new Point(12, 9);
             label1.Name = "label1";
-            label1.Size = new Size(192, 25);
+            label1.Size = new Size(153, 25);
             label1.TabIndex = 0;
-            label1.Text = "Consultar Restaurantes";
+            label1.Text = "Consultar Clientes";
             // 
-            // dataGridView_consul_restaruantes
+            // dataGridView_consul_clientes
             // 
-            dataGridView_consul_restaruantes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView_consul_restaruantes.Location = new Point(12, 57);
-            dataGridView_consul_restaruantes.Name = "dataGridView_consul_restaruantes";
-            dataGridView_consul_restaruantes.RowHeadersWidth = 62;
-            dataGridView_consul_restaruantes.RowTemplate.Height = 33;
-            dataGridView_consul_restaruantes.Size = new Size(854, 526);
-            dataGridView_consul_restaruantes.TabIndex = 1;
+            dataGridView_consul_clientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView_consul_clientes.Location = new Point(12, 37);
+            dataGridView_consul_clientes.Name = "dataGridView_consul_clientes";
+            dataGridView_consul_clientes.RowHeadersWidth = 62;
+            dataGridView_consul_clientes.RowTemplate.Height = 33;
+            dataGridView_consul_clientes.Size = new Size(854, 855);
+            dataGridView_consul_clientes.TabIndex = 1;
             // 
-            // FormMostrarRestaurantes
+            // FormMostrarClientes
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(878, 904);
-            Controls.Add(dataGridView_consul_restaruantes);
+            Controls.Add(dataGridView_consul_clientes);
             Controls.Add(label1);
-            Name = "FormMostrarRestaurantes";
-            Text = "Consultar Restaurantes";
-            ((System.ComponentModel.ISupportInitialize)dataGridView_consul_restaruantes).EndInit();
+            Name = "FormMostrarClientes";
+            Text = "Consultar Clientes";
+            ((System.ComponentModel.ISupportInitialize)dataGridView_consul_clientes).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -69,6 +69,6 @@
         #endregion
 
         private Label label1;
-        private DataGridView dataGridView_consul_restaruantes;
+        private DataGridView dataGridView_consul_clientes;
     }
 }
