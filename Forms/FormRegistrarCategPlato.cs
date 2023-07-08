@@ -1,4 +1,7 @@
-﻿namespace Tarea2.Forms
+﻿using Tarea2.Forms;
+using Tarea2;
+
+namespace Tarea2.Forms
 {
     public partial class FormRegistrarCategPlato : Form
     {
@@ -14,10 +17,25 @@
             string descripcion = textBox_reg_cat_descripcion.Text;
             bool activo = checkBox_reg_cat_activa.Checked;
 
-            CategoriaPlato nuevaCategoria = new(descripcion, activo);
+            //Validación de los datos
+            if (descripcion == null || descripcion == "")
+            {
+                var mensaje = new FormMensaje("Error: Verifique la descripción de la categoría");
+                mensaje.ShowDialog();
+            }
+            else
+            {
+                CategoriaPlato nuevaCategoria = new(descripcion, activo);
 
-            // Registra la categoría
-            managerCategPlatos.Registrar(nuevaCategoria);
+                // Registra la categoría
+                managerCategPlatos.Registrar(nuevaCategoria);
+
+                var mensaje = new FormMensaje("La categoría " + descripcion + " ha sido añadida");
+                mensaje.ShowDialog();
+
+                textBox_reg_cat_descripcion.Text = "";
+                checkBox_reg_cat_activa.Checked = false;
+            }
         }
     }
 }

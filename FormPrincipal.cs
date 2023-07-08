@@ -62,5 +62,11 @@ namespace Tarea2
             var form = new FormMostrarClientes(managerClientes);
             form.ShowDialog();
         }
+
+        private void button_consul_categ_Click(object sender, EventArgs e)
+        {
+            var form = new FormMostrarCategPlatos(managerCategPlatos);
+            form.ShowDialog();
+        }
     }
 }

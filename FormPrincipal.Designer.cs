@@ -101,6 +101,7 @@
             button_consul_categ.TabIndex = 8;
             button_consul_categ.Text = "Consultar Categorías de Platos";
             button_consul_categ.UseVisualStyleBackColor = true;
+            button_consul_categ.Click += button_consul_categ_Click;
             // 
             // button_consul_rest
             // 
