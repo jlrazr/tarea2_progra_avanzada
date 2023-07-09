@@ -8,6 +8,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Tarea2;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Tarea2.Forms
@@ -29,6 +30,8 @@ namespace Tarea2.Forms
         private void FormRegistrarPlatoRestaurante_Shown(object sender, EventArgs e)
         {
             comboBox_reg_platoRest_lista.DataSource = managerRestaurantes.GetTodos().Where(x => x != null && x.Activo == true).ToList();
+            dataGridView_reg_platoRrest.DataSource = managerPlatos.GetTodos().Where(x => x != null).ToList();
+            comboBox_reg_platoRest_lista.DropDownStyle = ComboBoxStyle.DropDownList;
         }
     }
 }

@@ -31,9 +31,10 @@
             label1 = new Label();
             label2 = new Label();
             comboBox_reg_platoRest_lista = new ComboBox();
-            dataGridView1 = new DataGridView();
+            dataGridView_reg_platoRrest = new DataGridView();
             label3 = new Label();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            button_reg_platoRest = new Button();
+            ((System.ComponentModel.ISupportInitialize)dataGridView_reg_platoRrest).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -59,41 +60,51 @@
             comboBox_reg_platoRest_lista.FormattingEnabled = true;
             comboBox_reg_platoRest_lista.Location = new Point(12, 102);
             comboBox_reg_platoRest_lista.Name = "comboBox_reg_platoRest_lista";
-            comboBox_reg_platoRest_lista.Size = new Size(494, 33);
+            comboBox_reg_platoRest_lista.Size = new Size(704, 33);
             comboBox_reg_platoRest_lista.TabIndex = 2;
             // 
-            // dataGridView1
+            // dataGridView_reg_platoRrest
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 410);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.RowTemplate.Height = 33;
-            dataGridView1.Size = new Size(494, 225);
-            dataGridView1.TabIndex = 3;
+            dataGridView_reg_platoRrest.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView_reg_platoRrest.Location = new Point(12, 187);
+            dataGridView_reg_platoRrest.Name = "dataGridView_reg_platoRrest";
+            dataGridView_reg_platoRrest.RowHeadersWidth = 62;
+            dataGridView_reg_platoRrest.RowTemplate.Height = 33;
+            dataGridView_reg_platoRrest.Size = new Size(704, 643);
+            dataGridView_reg_platoRrest.TabIndex = 3;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(12, 241);
+            label3.Location = new Point(12, 159);
             label3.Name = "label3";
             label3.Size = new Size(156, 25);
             label3.TabIndex = 4;
             label3.Text = "Platos disponibles";
             // 
+            // button_reg_platoRest
+            // 
+            button_reg_platoRest.Location = new Point(12, 836);
+            button_reg_platoRest.Name = "button_reg_platoRest";
+            button_reg_platoRest.Size = new Size(308, 56);
+            button_reg_platoRest.TabIndex = 5;
+            button_reg_platoRest.Text = "Registrar Plato en Restaurante";
+            button_reg_platoRest.UseVisualStyleBackColor = true;
+            // 
             // FormRegistrarPlatoRestaurante
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(518, 904);
+            ClientSize = new Size(728, 904);
+            Controls.Add(button_reg_platoRest);
             Controls.Add(label3);
-            Controls.Add(dataGridView1);
+            Controls.Add(dataGridView_reg_platoRrest);
             Controls.Add(comboBox_reg_platoRest_lista);
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "FormRegistrarPlatoRestaurante";
             Text = "Registrar Platos para Restaurantes";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView_reg_platoRrest).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -103,7 +114,8 @@
         private Label label1;
         private Label label2;
         private ComboBox comboBox_reg_platoRest_lista;
-        private DataGridView dataGridView1;
+        private DataGridView dataGridView_reg_platoRrest;
         private Label label3;
+        private Button button_reg_platoRest;
     }
 }
