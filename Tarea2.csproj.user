@@ -13,6 +13,9 @@
     <Compile Update="Forms\FormMostrarClientes.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\FormMostrarExtras.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\FormMostrarPlatos.cs">
       <SubType>Form</SubType>
     </Compile>

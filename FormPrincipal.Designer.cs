@@ -141,6 +141,7 @@
             button_consul_extras.TabIndex = 12;
             button_consul_extras.Text = "Consultar Extras";
             button_consul_extras.UseVisualStyleBackColor = true;
+            button_consul_extras.Click += button_consul_extras_Click;
             // 
             // button_consul_platoRest
             // 

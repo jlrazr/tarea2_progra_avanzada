@@ -423,7 +423,7 @@ namespace Tarea2
                 var categoria = managerCategPlato.GetPorId(idCategoria);
                 if (categoria != null)
                 {
-                    var extra = new Extra(descripcion, idCategoria, activa, precio);
+                    var extra = new Extra(descripcion, categoria, activa, precio);
 
                     managerExtra.RegistrarExtra(extra);
                     Console.WriteLine("Extra registrada correctamente.");
@@ -454,7 +454,7 @@ namespace Tarea2
                 Console.WriteLine("Las extras para la categoría son:");
                 foreach (var extra in managerExtra.GetTodos())
                 {
-                    if (extra != null && extra.IdCategoriaPlato == idCategoria)
+                    if (extra != null && extra.CategoriaPlato.Id == idCategoria)
                     {
                         Console.WriteLine($"ID del extra: {extra.ID}, Descripción: {extra.Descripcion}, Precio: {extra.Precio}, Activa: {extra.Activo}");
                     }

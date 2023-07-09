@@ -10,17 +10,17 @@ namespace Tarea2
         public int ID { get; private set; }
         public string Descripcion { get; set; }
 
-        public int IdCategoriaPlato { get; set; }
+        public CategoriaPlato CategoriaPlato { get; set; }
         public bool Activo { get; set; }
         public int Precio { get; set; }
 
 
         // Constructor
-        public Extra(string descripcion, int idCategoriaPlato, bool activo, int precio)
+        public Extra(string descripcion, CategoriaPlato categoriaPlato, bool activo, int precio)
         {
             ID = SiguienteId;
             Descripcion = descripcion;
-            IdCategoriaPlato = idCategoriaPlato;
+            CategoriaPlato = categoriaPlato;
             Activo = activo;
             Precio = precio;
 

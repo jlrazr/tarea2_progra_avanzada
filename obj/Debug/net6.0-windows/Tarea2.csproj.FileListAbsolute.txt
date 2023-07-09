@@ -26,3 +26,4 @@ D:\UNED\IIQ2023\Programacion Avanzada\Tarea2\Tarea2\Tarea2\obj\Debug\net6.0-wind
 D:\UNED\IIQ2023\Programacion Avanzada\Tarea2\Tarea2\Tarea2\obj\Debug\net6.0-windows\Tarea2.Forms.FormMostrarClientes.resources
 D:\UNED\IIQ2023\Programacion Avanzada\Tarea2\Tarea2\Tarea2\obj\Debug\net6.0-windows\Tarea2.Forms.FormMostrarCategPlatos.resources
 D:\UNED\IIQ2023\Programacion Avanzada\Tarea2\Tarea2\Tarea2\obj\Debug\net6.0-windows\Tarea2.Forms.FormMostrarPlatos.resources
+D:\UNED\IIQ2023\Programacion Avanzada\Tarea2\Tarea2\Tarea2\obj\Debug\net6.0-windows\Tarea2.Forms.FormMostrarExtras.resources

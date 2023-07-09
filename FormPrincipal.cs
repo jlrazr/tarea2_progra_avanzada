@@ -74,5 +74,11 @@ namespace Tarea2
             var form = new FormMostrarPlatos(managerPlatos);
             form.ShowDialog();
         }
+
+        private void button_consul_extras_Click(object sender, EventArgs e)
+        {
+            var form = new FormMostrarExtras(managerExtra);
+            form.ShowDialog();
+        }
     }
 }
