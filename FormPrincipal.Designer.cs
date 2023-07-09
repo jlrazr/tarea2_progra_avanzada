@@ -169,6 +169,7 @@
             button_consul_platos.TabIndex = 9;
             button_consul_platos.Text = "Consultar Platos";
             button_consul_platos.UseVisualStyleBackColor = true;
+            button_consul_platos.Click += button_consul_platos_Click;
             // 
             // FormPrincipal
             // 
