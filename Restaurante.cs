@@ -1,4 +1,7 @@
-﻿namespace Tarea2
+﻿using System.Net;
+using System.Xml.Linq;
+
+namespace Tarea2
 {
     public class Restaurante
     {
@@ -20,6 +23,11 @@
             Telefono = telefono;
 
             SiguienteId++;
+        }
+
+        public override string ToString()
+        {
+            return $"ID: {Id} | {Nombre} | {Direccion}";
         }
     }
 

@@ -21,6 +21,11 @@ namespace Tarea2
 
             SiguienteId++;
         }
+
+        public override string ToString()
+        {
+            return $"ID: {Id} | {Descripcion}";
+        }
     }
 }
 
