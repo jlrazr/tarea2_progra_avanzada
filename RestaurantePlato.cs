@@ -6,17 +6,19 @@ namespace Tarea2
     public class RestaurantePlato
     {
         private static int SiguienteId = 1; // Compartida para todas las instancias
-        public int IdRestaurante { get; set; }
-        public int IdPlato { get; set; }
-        public DateOnly FechaAfiliacion { get; set; }
+        public Plato[] Platos { get; set; }
+        public Restaurante Restaurante { get; set; }
+        public DateTime FechaAfiliacion { get; set; }
 
 
         // Constructor
-        public RestaurantePlato(int idRest, int idPlato)
+        public RestaurantePlato(Restaurante rest, Plato[] platos)
         {
-            IdRestaurante = idRest;
-            IdPlato = idPlato;
-            FechaAfiliacion = new DateOnly();
+            Platos = platos;
+            Restaurante = rest;
+            FechaAfiliacion = new DateTime();
+
+            SiguienteId++;
         }
     }
 }

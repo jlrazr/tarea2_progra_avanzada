@@ -90,6 +90,7 @@
             button_reg_platoRest.TabIndex = 5;
             button_reg_platoRest.Text = "Registrar Plato en Restaurante";
             button_reg_platoRest.UseVisualStyleBackColor = true;
+            button_reg_platoRest.Click += button_reg_platoRest_Click;
             // 
             // FormRegistrarPlatoRestaurante
             // 
