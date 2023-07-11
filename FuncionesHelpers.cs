@@ -301,10 +301,6 @@ namespace Tarea2
             }
         }
 
-        
-
-        
-
         public static void RegistrarExtra(ManagerExtra managerExtra, ManagerCategPlatos managerCategPlato)
         {
             try

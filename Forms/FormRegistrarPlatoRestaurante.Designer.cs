@@ -34,7 +34,11 @@
             dataGridView_reg_platoRrest = new DataGridView();
             label3 = new Label();
             button_reg_platoRest = new Button();
+            dataGridView_consul_platosRest = new DataGridView();
+            button_consul_platosRest = new Button();
+            label4 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView_reg_platoRrest).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView_consul_platosRest).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -70,7 +74,7 @@
             dataGridView_reg_platoRrest.Name = "dataGridView_reg_platoRrest";
             dataGridView_reg_platoRrest.RowHeadersWidth = 62;
             dataGridView_reg_platoRrest.RowTemplate.Height = 33;
-            dataGridView_reg_platoRrest.Size = new Size(704, 643);
+            dataGridView_reg_platoRrest.Size = new Size(704, 255);
             dataGridView_reg_platoRrest.TabIndex = 3;
             // 
             // label3
@@ -84,7 +88,7 @@
             // 
             // button_reg_platoRest
             // 
-            button_reg_platoRest.Location = new Point(12, 836);
+            button_reg_platoRest.Location = new Point(408, 448);
             button_reg_platoRest.Name = "button_reg_platoRest";
             button_reg_platoRest.Size = new Size(308, 56);
             button_reg_platoRest.TabIndex = 5;
@@ -92,11 +96,43 @@
             button_reg_platoRest.UseVisualStyleBackColor = true;
             button_reg_platoRest.Click += button_reg_platoRest_Click;
             // 
+            // dataGridView_consul_platosRest
+            // 
+            dataGridView_consul_platosRest.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView_consul_platosRest.Location = new Point(12, 670);
+            dataGridView_consul_platosRest.Name = "dataGridView_consul_platosRest";
+            dataGridView_consul_platosRest.RowHeadersWidth = 62;
+            dataGridView_consul_platosRest.RowTemplate.Height = 33;
+            dataGridView_consul_platosRest.Size = new Size(704, 264);
+            dataGridView_consul_platosRest.TabIndex = 6;
+            // 
+            // button_consul_platosRest
+            // 
+            button_consul_platosRest.Location = new Point(12, 611);
+            button_consul_platosRest.Name = "button_consul_platosRest";
+            button_consul_platosRest.Size = new Size(308, 53);
+            button_consul_platosRest.TabIndex = 7;
+            button_consul_platosRest.Text = "Mostrar platos registrados";
+            button_consul_platosRest.UseVisualStyleBackColor = true;
+            button_consul_platosRest.Click += button_consul_platosRest_Click;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(12, 583);
+            label4.Name = "label4";
+            label4.Size = new Size(382, 25);
+            label4.TabIndex = 8;
+            label4.Text = "Platos Registrados al Restaurante Seleccionado";
+            // 
             // FormRegistrarPlatoRestaurante
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(728, 904);
+            ClientSize = new Size(728, 946);
+            Controls.Add(label4);
+            Controls.Add(button_consul_platosRest);
+            Controls.Add(dataGridView_consul_platosRest);
             Controls.Add(button_reg_platoRest);
             Controls.Add(label3);
             Controls.Add(dataGridView_reg_platoRrest);
@@ -106,6 +142,7 @@
             Name = "FormRegistrarPlatoRestaurante";
             Text = "Registrar Platos para Restaurantes";
             ((System.ComponentModel.ISupportInitialize)dataGridView_reg_platoRrest).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView_consul_platosRest).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -118,5 +155,8 @@
         private DataGridView dataGridView_reg_platoRrest;
         private Label label3;
         private Button button_reg_platoRest;
+        private DataGridView dataGridView_consul_platosRest;
+        private Button button_consul_platosRest;
+        private Label label4;
     }
 }

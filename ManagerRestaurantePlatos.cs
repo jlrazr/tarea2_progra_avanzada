@@ -9,12 +9,12 @@ namespace Tarea2
 
         public void Registrar(RestaurantePlato restaurantePlato)
         {
-            if (_cuentaRestaurantePlatos < 20)
+            if (_cuentaRestaurantePlatos < 10)
             {
                 _restaurantePlatos[_cuentaRestaurantePlatos++] = restaurantePlato;
             } else
             {
-                Console.WriteLine("El número máximo de platos (20) ya se ha alcanzado.");
+                Console.WriteLine("El número máximo de platos (10) ya se ha alcanzado.");
             }
         }
         public RestaurantePlato[] GetTodos()
