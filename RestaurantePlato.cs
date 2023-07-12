@@ -6,6 +6,7 @@ namespace Tarea2
     public class RestaurantePlato
     {
         private static int SiguienteId = 1; // Compartida para todas las instancias
+
         public Plato[] Platos { get; set; }
         public Restaurante Restaurante { get; set; }
         public DateTime FechaAfiliacion { get; set; }
