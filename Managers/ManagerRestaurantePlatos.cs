@@ -1,6 +1,7 @@
 ﻿using System.Xml.Linq;
+using Tarea2.Clases;
 
-namespace Tarea2
+namespace Tarea2.Managers
 {
     public class ManagerRestaurantePlatos : IManager<RestaurantePlato>
     {
@@ -13,7 +14,8 @@ namespace Tarea2
             if (_cuentaRestaurantePlatos < 10)
             {
                 _restaurantePlatos[_cuentaRestaurantePlatos++] = restaurantePlato;
-            } else
+            }
+            else
             {
                 Console.WriteLine("El número máximo de platos (10) ya se ha alcanzado.");
             }
@@ -25,7 +27,8 @@ namespace Tarea2
 
         public RestaurantePlato? GetPorIdRestaurante(int id)
         {
-            for (int i = 0; i < _cuentaRestaurantePlatos; i++) { 
+            for (int i = 0; i < _cuentaRestaurantePlatos; i++)
+            {
                 if (_restaurantePlatos[i].Restaurante.Id == id)
                 {
                     return _restaurantePlatos[i];
@@ -34,7 +37,7 @@ namespace Tarea2
             return null;
         }
 
-        public Boolean ExisteRestaurante(int id)
+        public bool ExisteRestaurante(int id)
         {
             for (int i = 0; i < _cuentaRestaurantePlatos; i++)
             {
@@ -46,7 +49,8 @@ namespace Tarea2
             return false;
         }
 
-        public void AnadirPlatos(int idRest, Plato plato) {
+        public void AnadirPlatos(int idRest, Plato plato)
+        {
             for (int i = 0; i < _cuentaRestaurantePlatos; i++)
             {
                 if (_restaurantePlatos[i].Restaurante.Id == idRest)
@@ -62,7 +66,7 @@ namespace Tarea2
             {
                 if (_restaurantePlatos[i].Restaurante.Id == id)
                 {
-                    _restaurantePlatos[i].Platos =  new Plato[10];
+                    _restaurantePlatos[i].Platos = new Plato[10];
                 }
             }
         }

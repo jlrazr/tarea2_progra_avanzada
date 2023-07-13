@@ -1,6 +1,7 @@
 ﻿using System.Xml.Linq;
+using Tarea2.Clases;
 
-namespace Tarea2
+namespace Tarea2.Managers
 {
     public class ManagerClientes : IManager<Cliente>
     {

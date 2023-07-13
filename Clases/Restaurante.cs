@@ -1,7 +1,7 @@
 ﻿using System.Net;
 using System.Xml.Linq;
 
-namespace Tarea2
+namespace Tarea2.Clases
 {
     public class Restaurante
     {

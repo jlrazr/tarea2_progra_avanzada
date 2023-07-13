@@ -1,6 +1,7 @@
 ﻿using System.Xml.Linq;
+using Tarea2.Clases;
 
-namespace Tarea2
+namespace Tarea2.Managers
 {
     public class ManagerCategPlatos : IManager<CategoriaPlato>
     {
@@ -13,7 +14,8 @@ namespace Tarea2
             {
                 _categPlatos[_cuentaCategPlatos++] = categoriaPlato;
                 Console.WriteLine("La categoría fue registrada con éxito.");
-            } else
+            }
+            else
             {
                 Console.WriteLine("El número máximo de categorías (20) ya se ha alcanzado.");
             }

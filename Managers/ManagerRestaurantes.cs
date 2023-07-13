@@ -1,6 +1,7 @@
 ﻿using System.Xml.Linq;
+using Tarea2.Clases;
 
-namespace Tarea2
+namespace Tarea2.Managers
 {
     public class ManagerRestaurantes : IManager<Restaurante>
     {
@@ -13,7 +14,8 @@ namespace Tarea2
             {
                 _restaurantes[_cuentaRestaurantes++] = restaurante;
                 Console.WriteLine("El restaurante fue registrado con éxito.");
-            } else
+            }
+            else
             {
                 Console.WriteLine("El número máximo de restaurantes (20) ya se ha alcanzado.");
             }

@@ -9,7 +9,8 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Tarea2;
+using Tarea2.Clases;
+using Tarea2.Managers;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Tarea2.Forms

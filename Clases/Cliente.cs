@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System;
 
-namespace Tarea2
+namespace Tarea2.Clases
 {
     public class Cliente
     {

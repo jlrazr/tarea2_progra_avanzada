@@ -1,5 +1,6 @@
 ﻿using Tarea2.Forms;
-using Tarea2;
+using Tarea2.Clases;
+using Tarea2.Managers;
 
 namespace Tarea2.Forms
 {

@@ -2,6 +2,7 @@
 using System;
 using System.Windows.Forms;
 using System.Collections.Generic;
+using Tarea2.Managers;
 
 namespace Tarea2.Forms
 {

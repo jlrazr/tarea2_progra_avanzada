@@ -3,6 +3,8 @@ using System;
 using System.Diagnostics;
 using System.Xml.Linq;
 using System.Xml.Serialization;
+using Tarea2.Clases;
+using Tarea2.Managers;
 
 namespace Tarea2
 {
