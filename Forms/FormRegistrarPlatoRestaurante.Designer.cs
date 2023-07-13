@@ -99,7 +99,7 @@
             // dataGridView_consul_platosRest
             // 
             dataGridView_consul_platosRest.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView_consul_platosRest.Location = new Point(12, 670);
+            dataGridView_consul_platosRest.Location = new Point(12, 748);
             dataGridView_consul_platosRest.Name = "dataGridView_consul_platosRest";
             dataGridView_consul_platosRest.RowHeadersWidth = 62;
             dataGridView_consul_platosRest.RowTemplate.Height = 33;
@@ -108,18 +108,18 @@
             // 
             // button_consul_platosRest
             // 
-            button_consul_platosRest.Location = new Point(12, 611);
+            button_consul_platosRest.Location = new Point(12, 689);
             button_consul_platosRest.Name = "button_consul_platosRest";
             button_consul_platosRest.Size = new Size(308, 53);
             button_consul_platosRest.TabIndex = 7;
-            button_consul_platosRest.Text = "Mostrar platos registrados";
+            button_consul_platosRest.Text = "Consultar platos registrados";
             button_consul_platosRest.UseVisualStyleBackColor = true;
             button_consul_platosRest.Click += button_consul_platosRest_Click;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(12, 583);
+            label4.Location = new Point(12, 661);
             label4.Name = "label4";
             label4.Size = new Size(382, 25);
             label4.TabIndex = 8;
@@ -129,7 +129,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(728, 946);
+            ClientSize = new Size(728, 1024);
             Controls.Add(label4);
             Controls.Add(button_consul_platosRest);
             Controls.Add(dataGridView_consul_platosRest);

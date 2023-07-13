@@ -19,7 +19,7 @@ namespace Tarea2.Forms
         private ManagerPlatos managerPlatos;
         private ManagerRestaurantePlatos managerRestaurantePlatos;
         private ManagerRestaurantes managerRestaurantes;
-        
+
         public FormRegistrarPlatoRestaurante(ManagerPlatos managerPlatos, ManagerRestaurantePlatos managerRestaurantePlatos, ManagerRestaurantes managerRestaurantes)
         {
             this.managerPlatos = managerPlatos;
@@ -56,11 +56,12 @@ namespace Tarea2.Forms
                         {
                             int idPlatoSeleccionado = platoSeleccionado.Id;
                             Plato platoSelec = managerPlatos.GetPorId(idPlatoSeleccionado);
-                            
+
                             managerRestaurantePlatos.AnadirPlatos(idRestSeleccionado, platoSelec);
                         }
                     }
-                } else
+                }
+                else
                 {
                     var mensaje_platosNoRegistrados = new FormMensaje("El restaurante NO tiene platos registrados y este porceso los crea.");
                     mensaje_platosNoRegistrados.ShowDialog();
@@ -79,9 +80,10 @@ namespace Tarea2.Forms
                             managerRestaurantePlatos.Registrar(nuevoResPlato);
                         }
                     }
-                    
+
                 }
-            } else
+            }
+            else
             {
                 var mensaje_errorReg = new FormMensaje("Ha ocurrido un error. Verifique los datos y vuelva a intentarlo");
                 mensaje_errorReg.ShowDialog();
@@ -98,7 +100,8 @@ namespace Tarea2.Forms
                 RestaurantePlato? restPlato = managerRestaurantePlatos.GetPorIdRestaurante(idRestSeleccionado);
 
                 dataGridView_consul_platosRest.DataSource = restPlato?.Platos.Where(x => x != null).ToList();
-            } else
+            }
+            else
             {
                 var mensaje_errorConsul = new FormMensaje("Ha ocurrido un error. Verifique que el restaurante tenga platos registrados y vuelva a intentarlo");
                 mensaje_errorConsul.ShowDialog();
