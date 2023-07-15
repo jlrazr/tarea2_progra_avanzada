@@ -18,13 +18,6 @@ namespace Tarea2.Forms
 
         private void button_reg_extras_Click(object sender, EventArgs e)
         {
-            string descripcion = textBox_reg_extra_desc.Text;
-            int idCateg;
-            int precio;
-            bool activa = checkBox_reg_extra_activa.Checked;
-            CategoriaPlato categ;
-
-
             //Validación de los datos
             if (textBox_reg_extra_desc.Text == null || textBox_reg_extra_desc.Text == "")
             {
@@ -43,21 +36,24 @@ namespace Tarea2.Forms
             }
             else
             {
-                var validaCateg = managerCategPlatos.GetPorId(int.Parse(textBox_reg_extra_idCateg.Text));
-
-                if (validaCateg == null)
+                try
                 {
-                    var mensaje = new FormMensaje("Error: El ID ingresado no corresponde a ninguna categoría");
-                    mensaje.ShowDialog();
-                }
-                else
-                {
-                    precio = int.Parse(textBox_reg_extra_precio.Text);
-                    idCateg = int.Parse(textBox_reg_extra_idCateg.Text);
-                    categ = managerCategPlatos.GetPorId(idCateg);
+                    string descripcion = textBox_reg_extra_desc.Text;
+                    int idCateg = int.Parse(textBox_reg_extra_idCateg.Text);
+                    int precio = int.Parse(textBox_reg_extra_precio.Text);
+                    bool activa = checkBox_reg_extra_activa.Checked;
+                    CategoriaPlato categ;
 
-                    try
+                    var validaCateg = managerCategPlatos.GetPorId(int.Parse(textBox_reg_extra_idCateg.Text));
+
+                    if (validaCateg == null)
                     {
+                        var mensaje = new FormMensaje("Error: El ID ingresado no corresponde a ninguna categoría");
+                        mensaje.ShowDialog();
+                    }
+                    else
+                    {
+                        categ = managerCategPlatos.GetPorId(idCateg);
                         Extra nuevaExtra = new(descripcion, categ, activa, precio);
 
                         // Registra la extra
@@ -71,13 +67,12 @@ namespace Tarea2.Forms
                         textBox_reg_extra_idCateg.Text = "";
                         checkBox_reg_extra_activa.Checked = false;
                     }
-                    catch (Exception ex)
-                    {
-                        var mensaje = new FormMensaje("Error: " + ex);
-                        mensaje.ShowDialog();
-                    }
                 }
-
+                catch
+                {
+                    var mensaje = new FormMensaje("Ha ocurrido un error. Por favor verifique los datos ingresados y vuelva a intentarlo.");
+                    mensaje.ShowDialog();
+                }
             }
         }
     }

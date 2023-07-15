@@ -18,45 +18,46 @@ namespace Tarea2.Forms
 
         private void button_reg_plato_Click(object sender, EventArgs e)
         {
-            string nombre = textBox_reg_plato_nombre.Text;
-            int precio;
-            int idCateg;
-            CategoriaPlato categ;
-
+            
             //Validación de los datos
             if (textBox_reg_plato_precio.Text == null || textBox_reg_plato_precio.Text == "")
             {
                 var mensaje = new FormMensaje("Error: Verifique el precio del plato");
                 mensaje.ShowDialog();
-            } else if (textBox_reg_plato_idCateg.Text == null || textBox_reg_plato_idCateg.Text == "")
+            }
+            else if (textBox_reg_plato_idCateg.Text == null || textBox_reg_plato_idCateg.Text == "")
             {
                 var mensaje = new FormMensaje("Error: Verifique el ID de la categoría");
                 mensaje.ShowDialog();
             }
-            else if (nombre == null || nombre == "")
+            else if (textBox_reg_plato_nombre.Text == null || textBox_reg_plato_nombre.Text == "")
             {
                 var mensaje = new FormMensaje("Error: Verifique el nombre del plato");
                 mensaje.ShowDialog();
             }
             else
-            {
-                var validaCateg = managerCategPlatos.GetPorId(int.Parse(textBox_reg_plato_idCateg.Text));
+            { 
 
-                if (validaCateg == null)
+                try
                 {
-                    var mensaje = new FormMensaje("Error: El ID ingresado no corresponde a ninguna categoría");
-                    mensaje.ShowDialog();
-                }  else
-                {
-                    precio = int.Parse(textBox_reg_plato_precio.Text);
-                    idCateg = int.Parse(textBox_reg_plato_idCateg.Text);
-                    categ = managerCategPlatos.GetPorId(idCateg);
+                    string nombre = textBox_reg_plato_nombre.Text;
+                    int precio = int.Parse(textBox_reg_plato_precio.Text);
+                    int idCateg = int.Parse(textBox_reg_plato_idCateg.Text);
+                    CategoriaPlato categ;
 
-                    try
+                    var validaCateg = managerCategPlatos.GetPorId(int.Parse(textBox_reg_plato_idCateg.Text));
+
+                    if (validaCateg == null)
                     {
+                        var mensaje = new FormMensaje("Error: El ID ingresado no corresponde a ninguna categoría");
+                        mensaje.ShowDialog();
+                    }
+                    else
+                    {
+                        categ = managerCategPlatos.GetPorId(idCateg);
                         Plato nuevoPlato = new(nombre, precio, categ);
 
-                        // Registra el ´plato
+                        // Registra el plato
                         managerPlatos.Registrar(nuevoPlato);
 
                         var mensaje = new FormMensaje("El plato " + nombre + " ha sido añadido");
@@ -65,13 +66,12 @@ namespace Tarea2.Forms
                         textBox_reg_plato_nombre.Text = "";
                         textBox_reg_plato_precio.Text = "";
                         textBox_reg_plato_idCateg.Text = "";
-
                     }
-                    catch (Exception ex)
-                    {
-                        var mensaje = new FormMensaje("Error: " + ex);
-                        mensaje.ShowDialog();
-                    }
+                }
+                catch
+                {
+                    var mensaje = new FormMensaje("Ha ocurrido un error. Por favor verifique los datos ingresados y vuelva a intentarlo.");
+                    mensaje.ShowDialog();
                 }
             }
         }
