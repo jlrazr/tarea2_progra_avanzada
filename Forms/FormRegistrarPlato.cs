@@ -46,8 +46,7 @@ namespace Tarea2.Forms
                 {
                     var mensaje = new FormMensaje("Error: El ID ingresado no corresponde a ninguna categoría");
                     mensaje.ShowDialog();
-                }
-                else
+                }  else
                 {
                     precio = int.Parse(textBox_reg_plato_precio.Text);
                     idCateg = int.Parse(textBox_reg_plato_idCateg.Text);
@@ -74,7 +73,6 @@ namespace Tarea2.Forms
                         mensaje.ShowDialog();
                     }
                 }
-                
             }
         }
     }

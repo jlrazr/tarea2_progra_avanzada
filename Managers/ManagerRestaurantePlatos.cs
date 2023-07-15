@@ -56,6 +56,7 @@ namespace Tarea2.Managers
                 if (_restaurantePlatos[i].Restaurante.Id == idRest)
                 {
                     _restaurantePlatos[i].Platos[_numeroPlatos] = plato;
+                    _numeroPlatos++;
                 }
             }
         }
@@ -69,6 +70,8 @@ namespace Tarea2.Managers
                     _restaurantePlatos[i].Platos = new Plato[10];
                 }
             }
+
+            _numeroPlatos = 0;
         }
     }
 }

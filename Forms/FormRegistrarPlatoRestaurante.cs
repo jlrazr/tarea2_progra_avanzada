@@ -40,6 +40,7 @@ namespace Tarea2.Forms
         private void button_reg_platoRest_Click(object sender, EventArgs e)
         {
             Plato[] platosSeleccionados = new Plato[10];
+            int contadorPlatos = 0;
 
             if (comboBox_reg_platoRest_lista.SelectedItem != null && comboBox_reg_platoRest_lista.SelectedItem is Restaurante restauranteSeleccionado)
             {
@@ -48,8 +49,8 @@ namespace Tarea2.Forms
 
                 if (managerRestaurantePlatos.ExisteRestaurante(idRestSeleccionado))
                 {
-                    var mensaje_platosRegistrados = new FormMensaje("El restaurante ya tiene platos registrados.");
-                    mensaje_platosRegistrados.ShowDialog();
+                    contadorPlatos = 0;
+                    managerRestaurantePlatos.LimpiarPlatos(idRestSeleccionado);
 
                     foreach (DataGridViewRow row in dataGridView_reg_platoRrest.SelectedRows)
                     {
@@ -57,16 +58,19 @@ namespace Tarea2.Forms
                         {
                             int idPlatoSeleccionado = platoSeleccionado.Id;
                             Plato platoSelec = managerPlatos.GetPorId(idPlatoSeleccionado);
+                            platosSeleccionados[contadorPlatos] = platoSelec;
+                            contadorPlatos++;
 
                             managerRestaurantePlatos.AnadirPlatos(idRestSeleccionado, platoSelec);
                         }
                     }
+
+                    var mensaje_platosNoRegistrados = new FormMensaje("El/los platos han sido registrados en el restaurante " + restauranteSeleccionado.Nombre);
+                    mensaje_platosNoRegistrados.ShowDialog();
                 }
                 else
                 {
-                    var mensaje_platosNoRegistrados = new FormMensaje("El restaurante NO tiene platos registrados y este porceso los crea.");
-                    mensaje_platosNoRegistrados.ShowDialog();
-                    int contadorPlatos = 0;
+                    contadorPlatos = 0;
 
                     foreach (DataGridViewRow row in dataGridView_reg_platoRrest.SelectedRows)
                     {
@@ -82,6 +86,9 @@ namespace Tarea2.Forms
                         }
                     }
 
+                    var mensaje_platosNoRegistrados = new FormMensaje("El/los platos han sido registrados en el restaurante " + restauranteSeleccionado.Nombre);
+                    mensaje_platosNoRegistrados.ShowDialog();
+
                 }
             }
             else
@@ -93,14 +100,13 @@ namespace Tarea2.Forms
 
         private void button_consul_platosRest_Click(object sender, EventArgs e)
         {
-            //var mensaje = new FormMensaje(comboBox_reg_platoRest_lista.SelectedItem.ToString());
-            //mensaje.ShowDialog();
             if (comboBox_reg_platoRest_lista.SelectedItem != null && comboBox_reg_platoRest_lista.SelectedItem is Restaurante restauranteSeleccionado)
             {
                 int idRestSeleccionado = restauranteSeleccionado.Id;
                 RestaurantePlato? restPlato = managerRestaurantePlatos.GetPorIdRestaurante(idRestSeleccionado);
 
                 dataGridView_consul_platosRest.DataSource = restPlato?.Platos.Where(x => x != null).ToList();
+                label_fecha_afil.Text = "Fecha de afiliación: " + restPlato?.FechaAfiliacion.ToString();
             }
             else
             {

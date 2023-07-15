@@ -38,7 +38,6 @@
             button_reg_extras = new Button();
             button_reg_platoRest = new Button();
             button_consul_extras = new Button();
-            button_consul_platoRest = new Button();
             button_consul_clientes = new Button();
             button_consul_platos = new Button();
             SuspendLayout();
@@ -129,28 +128,19 @@
             button_reg_platoRest.Name = "button_reg_platoRest";
             button_reg_platoRest.Size = new Size(475, 50);
             button_reg_platoRest.TabIndex = 5;
-            button_reg_platoRest.Text = "Registrar Platos por Restaurante";
+            button_reg_platoRest.Text = "Registrar y Consultar Platos por Restaurante";
             button_reg_platoRest.UseVisualStyleBackColor = true;
             button_reg_platoRest.Click += button_reg_platoRest_Click;
             // 
             // button_consul_extras
             // 
-            button_consul_extras.Location = new Point(20, 896);
+            button_consul_extras.Location = new Point(20, 832);
             button_consul_extras.Name = "button_consul_extras";
             button_consul_extras.Size = new Size(475, 50);
             button_consul_extras.TabIndex = 12;
             button_consul_extras.Text = "Consultar Extras";
             button_consul_extras.UseVisualStyleBackColor = true;
             button_consul_extras.Click += button_consul_extras_Click;
-            // 
-            // button_consul_platoRest
-            // 
-            button_consul_platoRest.Location = new Point(20, 828);
-            button_consul_platoRest.Name = "button_consul_platoRest";
-            button_consul_platoRest.Size = new Size(475, 50);
-            button_consul_platoRest.TabIndex = 11;
-            button_consul_platoRest.Text = "Consultar Platos por Restaurante";
-            button_consul_platoRest.UseVisualStyleBackColor = true;
             // 
             // button_consul_clientes
             // 
@@ -176,9 +166,8 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(507, 981);
+            ClientSize = new Size(507, 911);
             Controls.Add(button_consul_extras);
-            Controls.Add(button_consul_platoRest);
             Controls.Add(button_consul_clientes);
             Controls.Add(button_consul_platos);
             Controls.Add(button_consul_categ);
@@ -208,7 +197,6 @@
         private Button button_reg_extras;
         private Button button_reg_platoRest;
         private Button button_consul_extras;
-        private Button button_consul_platoRest;
         private Button button_consul_clientes;
         private Button button_consul_platos;
     }

@@ -17,7 +17,7 @@ namespace Tarea2.Clases
         {
             Platos = platos;
             Restaurante = rest;
-            FechaAfiliacion = new DateTime();
+            FechaAfiliacion = DateTime.Now;
 
             SiguienteId++;
         }
